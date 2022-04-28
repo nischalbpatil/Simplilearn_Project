@@ -1,0 +1,16 @@
+.help, is-error, h1, input, textarea {
+
+  font-family: Trebuchet MS, sans-serif;
+  color: rgb(90, 210, 72);
+}
+
+h1 {
+
+  font-weight: bold;
+}
+button {
+
+  color: white;
+  font-family: Trebuchet MS, sans-serif;
+}
+

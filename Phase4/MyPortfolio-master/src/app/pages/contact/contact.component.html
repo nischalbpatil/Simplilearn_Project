@@ -1,0 +1,28 @@
+<div class="container mt-5 mb-5">
+
+  <h1>Contact</h1>
+
+  <form class="col-lg-8" (ngSubmit)="submitForm()" #contactForm="ngForm">
+    <div class="row">
+      <div class="col-lg-6 mt-2 mb-2">
+        <input name="firstname" type="text" class="form-control" placeholder="Enter first name" [(ngModel)]="firstname" #nameInput="ngModel" required>
+        <div class="help is-error" *ngIf="nameInput.invalid && nameInput.touched"> Your first name is required.</div>
+      </div>
+      <div class="col-lg-6 mt-2 mb-2">
+        <input name="lastname" type="text" class="form-control" placeholder="Enter last name" [(ngModel)]="lastname" #nameInput="ngModel" required>
+        <div class="help is-error" *ngIf="nameInput.invalid && nameInput.touched"> Your last name is required.</div>
+      </div>
+      <div class="col-lg-12 mt-2 mb-2">
+        <input name="email" type="text" class="form-control" placeholder="Enter email ID" [(ngModel)]="email" required email #emailInput="ngModel">
+        <div class="help is-error" *ngIf="emailInput.invalid && emailInput.touched"> Your email is required and needs to be an email.</div>
+      </div>
+      <div class="col-lg-12 mt-2 mb-2">
+        <textarea name="message" class="form-control" placeholder="Write your message here" rows="3" [(ngModel)]="message" #messageInput="ngModel"required></textarea>
+        <div class="help is-error" *ngIf="messageInput.invalid && messageInput.touched"> Please, write your message.</div>
+      </div>
+      <div class="col-lg-12 mt-2 mb-2">
+        <button class="btn btn-md btn-dark" [disabled]="contactForm.invalid">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,42 @@
+div{
+
+  background-color: rgb(238, 213, 217);
+  background-size: cover;
+}
+
+h1 {
+
+  font-family: Trebuchet MS, sans-serif;
+  text-align: center;
+  color: rgb(251, 248, 250);
+}
+
+.banner {
+
+  background-image: url('../../../assets/img/flower.jpg');
+  position: fixed;
+  top: 20px;
+  z-index: -1;
+  background-size: cover;
+  height: 100%;
+  width: 100%
+}
+
+.card {
+
+  margin: 14%;
+  border-radius: 20px;
+  background-color: thistle;
+
+
+}
+
+.card-body {
+
+  color: rgb(251, 251, 251);
+  font-family: Trebuchet MS, sans-serif;
+  border-radius: 20px;
+  background-color: rgb(67, 204, 78);
+
+}
+
